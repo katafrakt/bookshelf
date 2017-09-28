@@ -24,3 +24,5 @@ end
 group :production do
   # gem 'puma'
 end
+
+gem 'pry'

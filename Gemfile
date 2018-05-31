@@ -6,6 +6,8 @@ gem 'hanami-model', '~> 1.2.0'
 
 gem 'sqlite3'
 gem 'faker'
+gem 'pagy'
+gem 'pry'
 
 group :development do
   # Code reloading

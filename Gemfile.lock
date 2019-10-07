@@ -1,3 +1,8 @@
+PATH
+  remote: ../pagy
+  specs:
+    pagy (3.6.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -115,7 +120,6 @@ GEM
     minitest (5.10.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
-    pagy (0.8.1)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -167,11 +171,11 @@ DEPENDENCIES
   hanami (= 1.2.0)
   hanami-model (~> 1.2.0)
   minitest
-  pagy
+  pagy!
   pry
   rake
   shotgun
   sqlite3
 
 BUNDLED WITH
-   1.16.1
+   1.17.3

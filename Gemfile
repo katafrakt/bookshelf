@@ -6,7 +6,7 @@ gem 'hanami-model', '~> 1.2.0'
 
 gem 'sqlite3'
 gem 'faker'
-gem 'pagy'
+gem 'pagy', github: 'katafrakt/pagy', branch: 'hanami-ext'
 gem 'pry'
 
 group :development do

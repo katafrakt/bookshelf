@@ -6,13 +6,7 @@ module Web::Controllers::Books
     expose :books, :pagy_data
 
     def call(params)
-      @pagy_data, @books = pagy(BookRepository.new)
+      @pagy_data, @books = pagy_hanami(BookRepository.new)
     end
-
-    private
-
-    def pagy_get_items(repo, pagy)
-      repo.page(pagy.offset, pagy.items)
-    end    
   end
 end

@@ -1,9 +1,5 @@
-class BookRepository < Hanami::Repository
-    def page(offset, size)
-        books.offset(offset).limit(size).to_a
-    end
+require 'pagy/extras/hanami'
 
-    def count
-        books.count
-    end
+class BookRepository < Hanami::Repository
+    include Pagy::Hanami::RepositoryIntegration
 end
